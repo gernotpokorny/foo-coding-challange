@@ -1,0 +1,37 @@
+{
+	"extends": [
+		"react-app",
+		"react-app/jest",
+		"plugin:testing-library/react"
+	],
+	"rules": {
+		"comma-dangle": [
+			"warn",
+			{
+				"arrays": "always-multiline",
+				"objects": "always-multiline",
+				"imports": "always-multiline",
+				"exports": "always-multiline",
+				"functions": "never"
+			}
+		],
+		"quotes": [
+			"warn",
+			"single"
+		],
+		"max-len": [
+			"warn",
+			{
+				"code": 140,
+				"ignoreComments": true,
+				"ignoreTemplateLiterals": true,
+				"ignorePattern": "(test\\('.*'.*)|(it\\('.*'.*)|(describe\\('.*'.*)"
+			}
+		],
+		"semi": [
+			"warn",
+			"always"
+		],
+		"no-extra-semi": "warn"
+	}
+}
